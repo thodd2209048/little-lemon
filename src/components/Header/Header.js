@@ -1,15 +1,13 @@
 import React from "react";
 
-import Nav from "./Nav";
-import images from "../../assets/images";
+import Navigation from "./Navigation/Navigation";
 
 Header.propTypes = {};
 
 function Header(props) {
   return (
     <>
-      <img src={images.yellowFullLogo} alt="Little Lemon" />
-      <Nav />
+      <Navigation />
     </>
   );
 }

@@ -1,18 +1,14 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.css";
+
 import "./App.css";
-import Header from "./components/Header/Header";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+import Layout from "./layout/Layout";
 
 function App() {
   return (
-    <React.Fragment className="App">
-      <Header />
-
-      <Main />
-
-      <Footer />
-    </React.Fragment>
+    <div className="App">
+      <Layout />
+    </div>
   );
 }
 

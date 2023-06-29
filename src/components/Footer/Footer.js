@@ -5,7 +5,8 @@ Footer.propTypes = {};
 function Footer(props) {
   return (
     <>
-      <>
+      Footer
+      {/* <>
         Doormat Navigation
         <ul>
           <li>Home</li>
@@ -31,7 +32,7 @@ function Footer(props) {
           <li>Phone number</li>
           <li>Email</li>
         </ul>
-      </>
+      </> */}
     </>
   );
 }
