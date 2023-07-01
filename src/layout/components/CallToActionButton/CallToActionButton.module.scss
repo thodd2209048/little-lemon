@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 2.4rem;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  background-color: var(--primary2);
+  color: var(--secondary4);
+
+  &:hover {
+    border: 1px solid var(--secondary4);
+    color: var(--secondary4);
+    cursor: pointer;
+  }
+}
+
+.title {
+  font-family: "Karla medium", sans-serif;
+  font-size: 1.8rem;
+}
