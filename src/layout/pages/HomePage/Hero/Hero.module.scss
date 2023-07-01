@@ -1,12 +1,62 @@
 .wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
   width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.textContainer {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  padding: 2rem 0;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
 }
 .title {
+  display: flex;
+  text-align: center;
+  font-size: min(20vw, 3.6rem);
+  color: var(--primary2);
+  line-height: 3.6rem;
 }
 .subTitle {
+  margin-bottom: 1rem;
+  font-size: min(14vw, 2.4rem);
+  color: white;
+  line-height: 2.4rem;
 }
 .slogan {
+  margin-top: 1rem;
+  padding: 1rem 0;
+  font-family: "Karla medium italic", sans-serif;
+  font-size: min(7vw, 2rem);
+  font-style: italic;
+  color: white;
 }
-.heroPicture {
+.imgCrop {
+  position: relative;
   width: 100%;
+  height: 100%;
+}
+.heroImg {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  // height: 100%;
+  bottom: calc(-50vw + 100px);
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
 }
