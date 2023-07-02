@@ -1,8 +1,8 @@
 .wrapper {
   display: flex;
-  min-width: 145px;
   align-items: center;
-  padding: min(0.8rem, 1vw) min(2.4rem, 2vw);
+  justify-content: center;
+  padding: min(0.8rem, 0.5vw) min(2.4rem, 2vw);
   outline: none;
   border: 1px solid transparent;
   border-radius: 16px;
