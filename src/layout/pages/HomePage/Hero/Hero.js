@@ -17,7 +17,9 @@ function Hero(props) {
         <Text subTitle className={clsx(styles.subTitle)}>
           Chicago
         </Text>
-        <CallToActionButton>Reserve a Table</CallToActionButton>
+        <CallToActionButton className={clsx(styles.button)}>
+          Reserve a Table
+        </CallToActionButton>
         <div className={clsx(styles.slogan)}>
           A Taste of Greece in Every Bite!
         </div>
