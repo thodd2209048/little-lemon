@@ -25,4 +25,11 @@ body {
   font-family: "Markazi Text", serif;
   font-size: 1.6rem;
   text-rendering: optimizeSpeed;
+  color: #333333;
+}
+
+@media screen and (max-width: 796px) {
+  body {
+    font-size: 1.6rem;
+  }
 }

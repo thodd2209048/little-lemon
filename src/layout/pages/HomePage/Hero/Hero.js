@@ -2,6 +2,7 @@ import clsx from "clsx";
 
 import images from "~/assets/images";
 import CallToActionButton from "~/layout/components/CallToActionButton/CallToActionButton";
+import Text from "~/layout/components/Text/Text";
 import styles from "./Hero.module.scss";
 
 Hero.propTypes = {};
@@ -10,8 +11,12 @@ function Hero(props) {
   return (
     <div className={clsx(styles.wrapper)}>
       <div className={clsx(styles.textContainer)}>
-        <div className={clsx(styles.title)}>Little Lemon</div>
-        <div className={clsx(styles.subTitle)}>Chicago</div>
+        <Text title className={clsx(styles.title)}>
+          Little Lemon
+        </Text>
+        <Text subTitle className={clsx(styles.subTitle)}>
+          Chicago
+        </Text>
         <CallToActionButton>Reserve a Table</CallToActionButton>
         <div className={clsx(styles.slogan)}>
           A Taste of Greece in Every Bite!
