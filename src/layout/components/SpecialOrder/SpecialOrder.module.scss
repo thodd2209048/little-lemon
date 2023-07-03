@@ -2,15 +2,15 @@
   width: 100%;
   height: 135px;
   display: grid;
-  grid-template-columns: 246px auto;
+  grid-template-columns: auto 135px;
   grid-template-areas: "info img";
-  gap: 8px;
+  gap: 4px;
 }
 .info {
   display: flex;
   flex-direction: column;
   grid-area: info;
-  padding: 8px 0 8px 8px;
+  padding: 8px 0;
 }
 .header {
   height: 24px;
@@ -33,13 +33,16 @@
   align-self: start;
 }
 .img {
-  height: 100%;
+  height: 135px;
   display: flex;
-  // align-items: center;
-  // justify-content: center;
+  align-items: center;
+  justify-content: center;
 
   & img {
+    height: 100%;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
     border-radius: 16px;
   }
 }
