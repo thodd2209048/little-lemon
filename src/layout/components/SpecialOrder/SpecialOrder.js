@@ -9,26 +9,31 @@ import clsx from "clsx";
 
 SpecialOrder.propTypes = {};
 
-function SpecialOrder(props) {
+function SpecialOrder({ dish }) {
+  const priceText = dish.price.toLocaleString("en-US", {
+    style: "currency",
+    currency: "USD",
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  });
   return (
     <div className={clsx(styles.wrapper)}>
       <div className={clsx(styles.info)}>
         <div className={clsx(styles.header)}>
-          <Text cardTitle>Greek salad</Text>
+          <Text cardTitle>{dish.name}</Text>
           <Text cardTitle className={clsx(styles.price)}>
-            $ 12.99
+            {priceText}
           </Text>
         </div>
         <Text paragraphText className={clsx(styles.description)}>
-          Indulge in the flavors of Greece with our Greek Salad, a vibrant
-          medley of fresh vegetables, feta cheese, and tangy olives.
+          {dish.description}
         </Text>
         <CallToActionButton className={clsx(styles.button)}>
           Order a delivery
         </CallToActionButton>
       </div>
       <div className={clsx(styles.img)}>
-        <img src={images.greekSalad} alt="Greek salad" />
+        <img src={dish.img} alt={dish.name} />
       </div>
     </div>
   );

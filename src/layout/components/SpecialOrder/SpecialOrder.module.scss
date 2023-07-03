@@ -24,10 +24,16 @@
   color: #ec5627;
 }
 .description {
-  height: 70px;
+  height: 60px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   // margin: 10px 0;
 }
 .button {
+  margin-top: 6px;
   width: auto;
   height: 23px;
   align-self: start;
