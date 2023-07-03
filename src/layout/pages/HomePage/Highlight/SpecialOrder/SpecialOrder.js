@@ -2,8 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import styles from "./SpecialOrder.module.scss";
-import Text from "../Text/Text";
-import CallToActionButton from "../CallToActionButton/CallToActionButton";
+import Text from "../../../../components/Text/Text";
+import CallToActionButton from "../../../../components/CallToActionButton/CallToActionButton";
 import images from "~/assets/images";
 import clsx from "clsx";
 

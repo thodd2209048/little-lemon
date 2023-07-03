@@ -4,7 +4,7 @@ import clsx from "clsx";
 
 import styles from "./Highlight.module.scss";
 import CallToActionButton from "~/layout/components/CallToActionButton/CallToActionButton";
-import SpecialOrder from "~/layout/components/SpecialOrder/SpecialOrder";
+import SpecialOrder from "~/layout/pages/HomePage/Highlight/SpecialOrder/SpecialOrder";
 import Text from "~/layout/components/Text/Text";
 import dishes from "~/data/dishes";
 

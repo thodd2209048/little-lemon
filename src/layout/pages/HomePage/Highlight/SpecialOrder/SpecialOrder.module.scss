@@ -9,6 +9,7 @@
 .info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   grid-area: info;
   padding: 8px 0;
 }
@@ -24,18 +25,18 @@
   color: #ec5627;
 }
 .description {
-  height: 60px;
+  margin: 8px 0;
+  height: 47px;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   // margin: 10px 0;
 }
 .button {
-  margin-top: 6px;
   width: auto;
-  height: 23px;
+  // height: 23px;
   align-self: start;
 }
 .img {
