@@ -9,6 +9,8 @@ const images = {
   cus002: require("./cus002.jpg"),
   cus003: require("./cus003.jpg"),
   star: require("./star.svg").default,
+  employee001: require("./employee001.jpg"),
+  employee002: require("./employee002.jpg"),
 };
 
 export default images;
