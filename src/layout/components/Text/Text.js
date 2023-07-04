@@ -4,7 +4,18 @@ import clsx from "clsx";
 
 import styles from "./Text.module.scss";
 
-Text.propTypes = {};
+Text.propTypes = {
+  children: PropTypes.string.isRequired,
+  className: PropTypes.node,
+  title: PropTypes.bool,
+  subTitle: PropTypes.bool,
+  leadText: PropTypes.bool,
+  sectionTitle: PropTypes.bool,
+  cardTitle: PropTypes.bool,
+  paragraphText: PropTypes.bool,
+  highlightText: PropTypes.bool,
+  special: PropTypes.bool,
+};
 
 function Text({
   children,
