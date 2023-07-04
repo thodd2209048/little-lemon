@@ -5,6 +5,7 @@ import Hero from "./Hero/Hero";
 import Highlight from "./Highlight/Highlight";
 import Testimonials from "./CustomerSay/CustomerSay";
 import { Container } from "react-bootstrap";
+import AboutUs from "./AboutUs/AboutUs";
 
 HomePage.propTypes = {};
 
@@ -18,7 +19,9 @@ function HomePage(props) {
         <Highlight />
         <Testimonials />
       </Container>
-      <div>About us</div>
+      <Container>
+        <AboutUs />
+      </Container>
     </>
   );
 }
