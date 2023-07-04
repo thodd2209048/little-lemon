@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 190px;
+}
+
+.img {
+  margin: 20px 0;
+  & img {
+    height: 134px;
+    width: 134px;
+    object-fit: cover;
+    border-radius: 999px;
+  }
+}
+
+.comment {
+  text-align: center;
+  padding-top: 6px;
+}

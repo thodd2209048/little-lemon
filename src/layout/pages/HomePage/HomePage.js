@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Hero from "./Hero/Hero";
 import Highlight from "./Highlight/Highlight";
-import Testimonials from "./Testimonials/Testimonials";
+import Testimonials from "./CustomerSay/CustomerSay";
 import { Container } from "react-bootstrap";
 
 HomePage.propTypes = {};
