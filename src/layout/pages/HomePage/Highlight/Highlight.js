@@ -13,7 +13,6 @@ Highlight.propTypes = {};
 function Highlight(props) {
   const specialDish = dishes.filter((dish) => dish.special);
   const topDish = specialDish.splice(0, 3);
-  console.log(topDish);
   return (
     <div className={clsx(styles.wrapper)}>
       <div className={clsx(styles.header)}>
