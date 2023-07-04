@@ -8,7 +8,7 @@ const images = {
   cus001: require("./cus001.jpg"),
   cus002: require("./cus002.jpg"),
   cus003: require("./cus003.jpg"),
-  star: require("./Star.svg").default,
+  star: require("./star.svg").default,
 };
 
 export default images;
