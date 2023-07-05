@@ -1,40 +1,53 @@
 .wrapper {
-  padding: 35px 0;
-
+  padding: 15px 0;
   background-color: var(--secondary3);
 }
 
-.container {
+// .container {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+// }
+
+// .imgArea {
+//   width: 15%;
+//   padding-top: 7px;
+
+//   & img {
+//     width: 100%;
+//     object-fit: cover;
+//   }
+// }
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+// .linkArea {
+//   width: 80%;
+
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr;
+// }
+
+// .linkCol {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+.linkList {
+  padding: 0;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.imgArea {
-  width: 15%;
-
-  & img {
-    width: 100%;
-    object-fit: cover;
-  }
-}
-
-.linkArea {
-  width: 80%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  flex-direction: column;
 }
 
 .linkCol a {
-  margin: 10px 0;
+  margin: 4px 0;
   font-family: "Karla", sans-serif;
   font-size: 1.6rem;
   font-weight: normal;
   line-height: 1.5rem;
-}
-
-.linkCol a:hover {
-  color: var(--secondary);
 }
 
 .linkColTitle {

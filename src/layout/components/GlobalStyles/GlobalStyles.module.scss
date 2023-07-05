@@ -28,6 +28,15 @@ body {
   color: #333333;
 }
 
+a {
+  color: var(--secondary4);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary);
+}
+
 @media screen and (max-width: 796px) {
   body {
     font-size: 1.6rem;
