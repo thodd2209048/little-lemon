@@ -1,5 +1,6 @@
 const images = {
   yellowFullLogo: require("./Asset-16@4x.png"),
+  logoVerticalYellow: require("./Asset-20@4x.png"),
   shoppingBasket: require("./shopping-basket.svg").default,
   hero: require("./hero.jpg"),
   dish001: require("./dish001.jpg"),
