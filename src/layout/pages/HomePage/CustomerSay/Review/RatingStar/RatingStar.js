@@ -9,7 +9,7 @@ RatingStar.propTypes = {};
 
 function RatingStar({ rating }) {
   return (
-    <div>
+    <div className={clsx(styles.wrapper)}>
       {Array(rating)
         .fill(null)
         .map((_, idx) => (
