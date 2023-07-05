@@ -1,0 +1,47 @@
+.wrapper {
+  padding: 35px 0;
+
+  background-color: var(--secondary3);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.imgArea {
+  width: 15%;
+
+  & img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.linkArea {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.linkCol a {
+  margin: 10px 0;
+  font-family: "Karla", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+}
+
+.linkCol a:hover {
+  color: var(--secondary);
+}
+
+.linkColTitle {
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+// @media screen and {
+// }
