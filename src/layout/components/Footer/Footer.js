@@ -22,7 +22,7 @@ function Footer(props) {
           <div className={clsx("d-none", "d-md-block", "col-md-1")}></div>
           {/* <div className={clsx(styles.linkArea)}> */}
           <div className={clsx(styles.linkCol, "col-md-3")}>
-            <span cardTitle className={clsx(styles.linkColTitle)}>
+            <span className={clsx(styles.linkColTitle)}>
               Doormat Navigation
             </span>
             <ul className={clsx(styles.linkList)}>

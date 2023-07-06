@@ -1,10 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-
-import styles from "./AboutUs.module.scss";
-import Text from "~/layout/components/Text/Text";
 import clsx from "clsx";
 import images from "~/assets/images";
+import Text from "~/layout/components/Text/Text";
+import styles from "./AboutUs.module.scss";
 
 AboutUs.propTypes = {};
 
@@ -24,8 +21,14 @@ function AboutUs(props) {
         </Text>
       </div>
       <div className={clsx(styles.imgArea)}>
-        <img src={images.employee001} alt="" />
-        <img src={images.employee002} alt="" />
+        <div className={clsx(styles.imgContainer)}>
+          <div className={clsx(styles.img1)}>
+            <img src={images.employee001} alt="" />
+          </div>
+          <div className={clsx(styles.img2)}>
+            <img src={images.employee002} alt="" />
+          </div>
+        </div>
       </div>
     </div>
   );
