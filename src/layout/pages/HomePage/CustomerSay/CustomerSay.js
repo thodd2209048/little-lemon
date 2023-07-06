@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 import styles from "./CustomerSay.module.scss";
 import clsx from "clsx";
