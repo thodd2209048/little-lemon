@@ -1,5 +1,26 @@
 .logo {
   height: 40px;
+  width: auto;
+
+  & img {
+    height: 100%;
+  }
+}
+
+.linkList {
+  font-size: 2rem;
+
+  & a {
+    margin: 0 1vw;
+  }
+
+  & a:hover {
+    color: var(--secondary);
+  }
+
+  & a:last-child {
+    margin-right: 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
