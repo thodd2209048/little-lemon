@@ -1,26 +1,23 @@
 import clsx from "clsx";
-import { Col, Container, NavLink, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 
 import styles from "./Footer.module.scss";
 import images from "~/assets/images";
-import Text from "../Text/Text";
 import { Link } from "react-router-dom";
 
 Footer.propTypes = {};
 
 function Footer(props) {
   return (
-    <Container fluid className={clsx(styles.wrapper)}>
+    <footer className={clsx(styles.wrapper, "container-fluid")}>
       <Container>
         <Row>
-          {/* <footer className={clsx(styles.container)}> */}
           <div
             className={clsx(styles.imgArea, "d-none", "d-md-block", "col-md-2")}
           >
             <img src={images.logoVerticalYellow} alt="" />
           </div>
           <div className={clsx("d-none", "d-md-block", "col-md-1")}></div>
-          {/* <div className={clsx(styles.linkArea)}> */}
           <div className={clsx(styles.linkCol, "col-md-3")}>
             <span className={clsx(styles.linkColTitle)}>
               Doormat Navigation
@@ -54,11 +51,9 @@ function Footer(props) {
               <Link to={"/social-email"}>Email</Link>
             </ul>
           </div>
-          {/* </div> */}
-          {/* </footer> */}
         </Row>
       </Container>
-    </Container>
+    </footer>
   );
 }
 
