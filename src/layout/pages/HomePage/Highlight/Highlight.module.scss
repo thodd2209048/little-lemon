@@ -11,5 +11,21 @@
 .title {
 }
 .content {
-  margin-bottom: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    gap: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
 }

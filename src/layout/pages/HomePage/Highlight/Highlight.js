@@ -19,11 +19,13 @@ function Highlight(props) {
         <Text title>Special</Text>
         <CallToActionButton>Online Menu</CallToActionButton>
       </div>
-      {topDish.map((dish, idx) => (
-        <div key={idx} className={clsx(styles.content)}>
-          <SpecialOrder dish={dish} />
-        </div>
-      ))}
+      <div className={clsx(styles.content)}>
+        {topDish.map((dish, idx) => (
+          <div key={idx}>
+            <SpecialOrder dish={dish} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

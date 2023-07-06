@@ -53,3 +53,40 @@
     border-radius: 16px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas:
+      "img"
+      "info";
+    gap: 4px;
+    background-color: var(--secondary3);
+    border-radius: 16px;
+  }
+
+  .img {
+    height: 200px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    grid-area: info;
+    padding: 8px 16px 16px;
+  }
+
+  .description {
+    margin-top: 16px;
+    font-size: 2rem;
+    line-height: 2rem;
+    height: auto;
+  }
+
+  .button {
+    margin-top: auto;
+  }
+}
