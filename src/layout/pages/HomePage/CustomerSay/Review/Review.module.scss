@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 190px;
+  width: 100%;
+  min-width: 250px;
 }
 
 .img {
