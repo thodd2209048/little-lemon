@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.guestCountContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.guestCount {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--inputHeight);
+  height: var(--inputHeight);
+  border: 1px solid var(--secondary4);
+  border-radius: 8px;
+  font-size: 24px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.active {
+  background-color: var(--primary2);
+  font-weight: bold;
+}

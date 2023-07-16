@@ -12,6 +12,12 @@ const images = {
   star: require("./star.svg").default,
   employee001: require("./employee001.jpg"),
   employee002: require("./employee002.jpg"),
+  tableEmpty: require("./tableEmpty.svg").default,
+  tableActive: require("./tableActive.svg").default,
+  tableInactive: require("./tableInactive.svg").default,
+  bigTableEmpty: require("./bigTableEmpty.svg").default,
+  bigTableActive: require("./bigTableActive.svg").default,
+  bigTableInactive: require("./bigTableInactive.svg").default,
 };
 
 export default images;

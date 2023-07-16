@@ -1,5 +1,6 @@
-import HomePage from "~/layout/pages/HomePage/HomePage";
-import MenuPage from "~/layout/pages/MenuPage/MenuPage";
+import BookingPage from "~/pages/BookingPage/BookingPage";
+import HomePage from "~/pages/HomePage/HomePage";
+import MenuPage from "~/pages/MenuPage/MenuPage";
 
 // Public routes
 const publicRoutes = [
@@ -7,6 +8,10 @@ const publicRoutes = [
   {
     path: "/menu",
     component: MenuPage,
+  },
+  {
+    path: "/booking",
+    component: BookingPage,
   },
 ];
 

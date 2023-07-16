@@ -1,0 +1,50 @@
+.wrapper {
+  --inputHeight: 40px;
+}
+
+.form {
+  display: grid;
+  grid-template-rows: 10% 10% 55% 1fr;
+  grid-template-areas: "dateTime";
+  width: 100%;
+  min-height: 750px;
+  gap: 20px;
+}
+.dateTime {
+  grid-area: dateTime;
+}
+
+input,
+select {
+  height: 40px;
+  font-size: 24px;
+  padding: 4px 12px;
+  border: 1px solid var(--secondary4);
+  border-radius: 10px;
+}
+
+input[type="date"] {
+  width: 100%;
+  color: var(--secondary4);
+  outline: no;
+}
+::-webkit-calendar-picker-indicator {
+  filter: invert(72%) sepia(68%) saturate(578%) hue-rotate(1deg)
+    brightness(106%) contrast(91%);
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+select {
+  width: 100%;
+  height: var(--inputHeight);
+  background: url("../../assets/images/time.svg") no-repeat right 17px center;
+  background-size: 25px 25px;
+  -webkit-appearance: none;
+}
+
+.table {
+}
+.submit {
+}

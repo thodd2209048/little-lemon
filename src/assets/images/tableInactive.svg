@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="26.049mm" height="26.067mm" version="1.1" viewBox="0 0 26.049 26.067" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-12.931 -59.976)" fill="#808080" stroke="#808080">
+  <path x="18.00654" y="65.060913" width="15.897242" height="15.897242" d="m20.123 65.061h11.664a2.1167 2.1167 45 0 1 2.1167 2.1167v11.664a2.1167 2.1167 135 0 1-2.1167 2.1167h-11.664a2.1167 2.1167 45 0 1-2.1167-2.1167v-11.664a2.1167 2.1167 135 0 1 2.1167-2.1167z" stroke-width=".53202"/>
+  <g transform="translate(-1.0516 .076444)" stroke-width=".485">
+   <circle cx="37.763" cy="68.923" r="2.0258"/>
+   <circle cx="37.763" cy="76.943" r="2.0258"/>
+  </g>
+  <g transform="translate(1.4973 .076444)" stroke-width=".485">
+   <circle cx="13.702" cy="76.943" r="2.0258"/>
+   <circle cx="13.702" cy="68.923" r="2.0258"/>
+  </g>
+  <g transform="translate(.22287 1.3416)" stroke-width=".485">
+   <circle cx="21.722" cy="60.903" r="2.0258"/>
+   <circle cx="29.742" cy="60.903" r="2.0258"/>
+  </g>
+  <g transform="translate(.22287 -1.1887)" stroke-width=".485">
+   <circle cx="29.742" cy="84.964" r="2.0258"/>
+   <circle cx="21.722" cy="84.964" r="2.0258"/>
+  </g>
+ </g>
+</svg>
