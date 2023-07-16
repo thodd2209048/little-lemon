@@ -8,7 +8,9 @@ import DateComponent from "./DateComponent/DateComponent";
 import TimeComponent from "./TimeComponent/TimeComponent";
 import GuestComponent from "./GuestComponent/GuestComponent";
 import TableComponent from "./TableComponent/TableComponent";
-import CallToActionButton from "~/components/CallToActionButton/CallToActionButton";
+import CallToActionButton from "~/components/Button/Button";
+import { Link } from "react-router-dom";
+import ConfirmationNotification from "./ConfirmationNotification/ConfirmationNotification";
 
 BookingPage.propTypes = {};
 
@@ -23,49 +25,72 @@ function BookingPage(props) {
   const [time, setTime] = useState("17:00");
   const [numberOfGuests, setNumberOfGuests] = useState(1);
   const [table, setTable] = useState([]);
+  const [booking, setBooking] = useState({});
+  const [isSubmit, setIsSubmit] = useState(false);
+  const [displayConfirmation, setDisplayConfirmation] = useState(false);
 
-  const seatingOptions = [1, 2, 3, 4, 8, 12, 20];
-  const listTime = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const newBooking = {
+      date: date,
+      time: time,
+      numberOfGuests: numberOfGuests,
+      table: table,
+    };
+    setBooking(newBooking);
+    setIsSubmit(true);
+    setDisplayConfirmation(true);
+  };
 
-  // console.log("date: ", date);
-  // console.log("time: ", time);
-  // console.log("numberOfGuests: ", numberOfGuests);
-  // const handleSubmit = ()
   return (
     <div className={clsx(styles.wrapper, "container")}>
       <Text title>Book a Table</Text>
       <form className={clsx(styles.form)}>
-        <Row className={clsx(styles.dateTime)}>
-          <Col className={clsx(styles.date)}>
+        <div className={clsx(styles.dateTimeGuest)}>
+          <div className={clsx(styles.date)}>
             <DateComponent date={date} setDate={setDate} />
-          </Col>
+          </div>
 
-          <Col className={clsx(styles.time)}>
-            <div>
-              <TimeComponent listTime={listTime} setTime={setTime} />
-            </div>
-          </Col>
-        </Row>
+          <div className={clsx(styles.time)}>
+            <TimeComponent setTime={setTime} />
+          </div>
 
-        <Row className={clsx(styles.guest)}>
-          <GuestComponent
-            seatingOptions={seatingOptions}
-            setNumberOfGuests={setNumberOfGuests}
-            numberOfGuests={numberOfGuests}
-          />
-        </Row>
+          <div className={clsx(styles.guest)}>
+            <GuestComponent
+              setNumberOfGuests={setNumberOfGuests}
+              numberOfGuests={numberOfGuests}
+            />
+          </div>
+        </div>
 
         <Row className={clsx(styles.table)}>
           <Text cardTitle>Chose a table</Text>
-          <TableComponent />
+          <TableComponent setTable={setTable} />
         </Row>
 
         <Row className={clsx(styles.submit)}>
-          <CallToActionButton className={clsx(styles.submitBtn)}>
-            Submit
-          </CallToActionButton>
+          {isSubmit ? (
+            <CallToActionButton className={clsx(styles.submitBtn)} to={"/"}>
+              Back to Home
+            </CallToActionButton>
+          ) : (
+            <CallToActionButton
+              className={clsx(styles.submitBtn)}
+              onClick={(e) => handleSubmit(e)}
+            >
+              Submit
+            </CallToActionButton>
+          )}
         </Row>
       </form>
+
+      {displayConfirmation && (
+        <div className={clsx(styles.confirmationNotification)}>
+          <ConfirmationNotification
+            setDisplayConfirmation={setDisplayConfirmation}
+          />
+        </div>
+      )}
     </div>
   );
 }

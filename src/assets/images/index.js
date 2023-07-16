@@ -18,6 +18,7 @@ const images = {
   bigTableEmpty: require("./bigTableEmpty.svg").default,
   bigTableActive: require("./bigTableActive.svg").default,
   bigTableInactive: require("./bigTableInactive.svg").default,
+  fireworks: require("./fireworks.svg").default,
 };
 
 export default images;

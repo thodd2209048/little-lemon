@@ -7,7 +7,7 @@ import images from "~/assets/images";
 
 TableComponent.propTypes = {};
 
-function TableComponent(props) {
+function TableComponent({ setTable }) {
   const [tableList, setTableList] = useState([
     { name: "a", status: "Empty", size: "table" },
     { name: "b", status: "Empty", size: "table" },
@@ -38,7 +38,12 @@ function TableComponent(props) {
       return table;
     });
 
+    const updateBookingTable = updateTableList
+      .filter((table) => table.status === "Active")
+      .map((table) => table.name);
+
     setTableList(updateTableList);
+    setTable(updateBookingTable);
   };
 
   return (

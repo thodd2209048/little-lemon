@@ -5,7 +5,7 @@ import clsx from "clsx";
 import styles from "./Highlight.module.scss";
 import dishes from "~/data/dishes";
 import Text from "~/components/Text/Text";
-import CallToActionButton from "~/components/CallToActionButton/CallToActionButton";
+import CallToActionButton from "~/components/Button/Button";
 import SpecialOrder from "./SpecialOrder/SpecialOrder";
 
 Highlight.propTypes = {};

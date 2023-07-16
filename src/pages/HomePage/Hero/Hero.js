@@ -3,7 +3,7 @@ import clsx from "clsx";
 import images from "~/assets/images";
 import styles from "./Hero.module.scss";
 import Text from "~/components/Text/Text";
-import CallToActionButton from "~/components/CallToActionButton/CallToActionButton";
+import CallToActionButton from "~/components/Button/Button";
 
 Hero.propTypes = {};
 

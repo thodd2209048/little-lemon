@@ -7,7 +7,8 @@ import clsx from "clsx";
 
 TimeComponent.propTypes = {};
 
-function TimeComponent({ listTime, setTime }) {
+function TimeComponent({ setTime }) {
+  const listTime = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
   return (
     <div className={clsx(styles.wrapper)}>
       <Text cardTitle className={clsx(styles.title)}>

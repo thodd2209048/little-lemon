@@ -9,12 +9,17 @@ Footer.propTypes = {};
 
 function Footer(props) {
   return (
-    <footer className={clsx(styles.wrapper, "container-fluid")}>
+    <footer
+      className={clsx(
+        styles.wrapper,
+        "container-fluid",
+        "d-none",
+        "d-md-block"
+      )}
+    >
       <Container>
         <Row>
-          <div
-            className={clsx(styles.imgArea, "d-none", "d-md-block", "col-md-2")}
-          >
+          <div className={clsx(styles.imgArea, "d-md-block", "col-md-2")}>
             <img src={images.logoVerticalYellow} alt="" />
           </div>
           <div className={clsx("d-none", "d-md-block", "col-md-1")}></div>

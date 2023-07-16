@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import styles from "./SpecialOrder.module.scss";
 import Text from "../../../../components/Text/Text";
-import CallToActionButton from "../../../../components/CallToActionButton/CallToActionButton";
+import CallToActionButton from "../../../../components/Button/Button";
 import images from "~/assets/images";
 import clsx from "clsx";
 

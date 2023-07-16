@@ -7,7 +7,8 @@ import styles from "./GuestComponent.module.scss";
 
 GuestComponent.propTypes = {};
 
-function GuestComponent({ seatingOptions, setNumberOfGuests, numberOfGuests }) {
+function GuestComponent({ setNumberOfGuests, numberOfGuests }) {
+  const seatingOptions = [1, 2, 3, 4, 8, 12, 20];
   return (
     <div className={clsx(styles.wrapper)}>
       <Text cardTitle className={clsx(styles.title)}>

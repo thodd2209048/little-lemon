@@ -1,6 +1,7 @@
 .wrapper {
   --inputHeight: 40px;
 
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,11 +11,27 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 750px;
-  gap: 2vh;
 }
-.dateTime {
-  grid-area: dateTime;
+.dateTimeGuest {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "date time"
+    "guest guest";
+  gap: 1vh;
+}
+
+.date {
+  grid-area: date;
+}
+
+.time {
+  grid-area: time;
+}
+
+.guest {
+  grid-area: guest;
 }
 
 input,
@@ -48,12 +65,31 @@ select {
 }
 
 .table {
+  margin-top: 2vh;
 }
 
 .submit {
+  margin: 2vh 0 1vh;
   display: flex;
   justify-content: center;
 }
 .submitBtn {
   width: 400px;
+  height: 5vh;
+  border: 1px solid black;
+}
+
+.confirmationNotification {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: white, $alpha: 0.6);
+}
+
+@media screen and (min-width: 992px) {
+  .dateTimeGuest {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "date time guest";
+  }
 }

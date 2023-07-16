@@ -33,3 +33,9 @@
   background-color: var(--primary2);
   font-weight: bold;
 }
+
+@media screen and (min-width: 992px) {
+  .guestCountContainer {
+    justify-content: start;
+  }
+}
