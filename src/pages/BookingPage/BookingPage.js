@@ -8,6 +8,7 @@ import DateComponent from "./DateComponent/DateComponent";
 import TimeComponent from "./TimeComponent/TimeComponent";
 import GuestComponent from "./GuestComponent/GuestComponent";
 import TableComponent from "./TableComponent/TableComponent";
+import CallToActionButton from "~/components/CallToActionButton/CallToActionButton";
 
 BookingPage.propTypes = {};
 
@@ -32,6 +33,7 @@ function BookingPage(props) {
   // const handleSubmit = ()
   return (
     <div className={clsx(styles.wrapper, "container")}>
+      <Text title>Book a Table</Text>
       <form className={clsx(styles.form)}>
         <Row className={clsx(styles.dateTime)}>
           <Col className={clsx(styles.date)}>
@@ -57,9 +59,12 @@ function BookingPage(props) {
           <Text cardTitle>Chose a table</Text>
           <TableComponent />
         </Row>
-        {/* <Row className={clsx(styles.submit)}>
-          <button>Submit</button>
-        </Row> */}
+
+        <Row className={clsx(styles.submit)}>
+          <CallToActionButton className={clsx(styles.submitBtn)}>
+            Submit
+          </CallToActionButton>
+        </Row>
       </form>
     </div>
   );
