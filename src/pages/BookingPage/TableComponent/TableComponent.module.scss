@@ -26,6 +26,7 @@
   user-select: none;
 
   & img {
+    object-fit: fill;
     height: calc(var(--tableSize) * 0.8);
     width: calc(var(--tableSize) * 0.8);
   }
@@ -45,9 +46,7 @@ p {
   align-self: center;
   text-align: center;
 }
-.Active:hover {
-  // opacity: 70%;
-}
+
 .Inactive {
   opacity: 80%;
   pointer-events: none;

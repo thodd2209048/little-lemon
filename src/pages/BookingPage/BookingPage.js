@@ -1,16 +1,15 @@
-import { useState } from "react";
 import clsx from "clsx";
-import { Col, Row } from "react-bootstrap";
+import { useState } from "react";
+import { Row } from "react-bootstrap";
 
+import Button from "~/components/Button/Button";
 import Text from "~/components/Text/Text";
 import styles from "./BookingPage.module.scss";
+import ConfirmationNotification from "./ConfirmationNotification/ConfirmationNotification";
 import DateComponent from "./DateComponent/DateComponent";
-import TimeComponent from "./TimeComponent/TimeComponent";
 import GuestComponent from "./GuestComponent/GuestComponent";
 import TableComponent from "./TableComponent/TableComponent";
-import CallToActionButton from "~/components/Button/Button";
-import { Link } from "react-router-dom";
-import ConfirmationNotification from "./ConfirmationNotification/ConfirmationNotification";
+import TimeComponent from "./TimeComponent/TimeComponent";
 
 BookingPage.propTypes = {};
 
@@ -70,16 +69,16 @@ function BookingPage(props) {
 
         <Row className={clsx(styles.submit)}>
           {isSubmit ? (
-            <CallToActionButton className={clsx(styles.submitBtn)} to={"/"}>
+            <Button className={clsx(styles.submitBtn)} to={"/"}>
               Back to Home
-            </CallToActionButton>
+            </Button>
           ) : (
-            <CallToActionButton
+            <Button
               className={clsx(styles.submitBtn)}
               onClick={(e) => handleSubmit(e)}
             >
               Submit
-            </CallToActionButton>
+            </Button>
           )}
         </Row>
       </form>
