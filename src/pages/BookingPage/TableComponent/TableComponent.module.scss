@@ -1,11 +1,24 @@
 .wrapper {
-  --tableSize: min(15vw, 80px);
+  --tableSize: max(15vw, 80px);
 
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
+.title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
 .display {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(5, var(--tableSize));
   grid-template-rows: repeat(6, var(--tableSize));
@@ -67,5 +80,11 @@ p {
   & img {
     transform: rotate(90deg);
     width: auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .wrapper {
+    --tableSize: max(4vw, 80px);
   }
 }

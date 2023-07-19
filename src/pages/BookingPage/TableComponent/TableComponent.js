@@ -4,6 +4,7 @@ import clsx from "clsx";
 
 import styles from "./TableComponent.module.scss";
 import images from "~/assets/images";
+import Text from "~/components/Text/Text";
 
 TableComponent.propTypes = {};
 
@@ -48,38 +49,43 @@ function TableComponent({ setTable }) {
 
   return (
     <div className={clsx(styles.wrapper)}>
-      <div className={clsx(styles.display)}>
-        {tableList.map((table) => {
-          const tableStatus = table.size + table.status;
-          return (
-            <div
-              key={table.name}
-              style={{ gridArea: table.name }}
-              className={clsx(
-                styles.table,
-                styles[table.name],
-                styles[table.status]
-              )}
-            >
-              <img
-                src={images[tableStatus]}
-                onClick={() => handleStatus(table.name)}
-                alt=""
-              />
-              <p
-                className={clsx(styles.tableName)}
-                onClick={(e) => e.target.previousSibling.click()}
+      <Text cardTitle className={clsx(styles.title)}>
+        Chose a table
+      </Text>
+      <div className={clsx(styles.container)}>
+        <div className={clsx(styles.display)}>
+          {tableList.map((table) => {
+            const tableStatus = table.size + table.status;
+            return (
+              <div
+                key={table.name}
+                style={{ gridArea: table.name }}
+                className={clsx(
+                  styles.table,
+                  styles[table.name],
+                  styles[table.status]
+                )}
               >
-                {table.name}
-              </p>
-            </div>
-          );
-        })}
-        <div className={clsx(styles.area)} style={{ gridArea: "entry" }}>
-          entry
-        </div>
-        <div className={clsx(styles.area)} style={{ gridArea: "kitchen" }}>
-          Opened kitchen
+                <img
+                  src={images[tableStatus]}
+                  onClick={() => handleStatus(table.name)}
+                  alt=""
+                />
+                <p
+                  className={clsx(styles.tableName)}
+                  onClick={(e) => e.target.previousSibling.click()}
+                >
+                  {table.name}
+                </p>
+              </div>
+            );
+          })}
+          <div className={clsx(styles.area)} style={{ gridArea: "entry" }}>
+            entry
+          </div>
+          <div className={clsx(styles.area)} style={{ gridArea: "kitchen" }}>
+            Opened kitchen
+          </div>
         </div>
       </div>
     </div>

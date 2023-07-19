@@ -1,7 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Text from "~/components/Text/Text";
 import clsx from "clsx";
+import Text from "~/components/Text/Text";
 
 import styles from "./GuestComponent.module.scss";
 

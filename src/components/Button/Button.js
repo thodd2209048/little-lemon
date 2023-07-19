@@ -11,7 +11,6 @@ function Button({ to, href, children, className, onClick, ...pass }) {
   const classes = clsx(styles.wrapper, className);
   let Comp = "button";
   let props = { to, href, onClick, ...pass };
-  console.log(props);
   if (to) {
     props.to = to;
     Comp = Link;
