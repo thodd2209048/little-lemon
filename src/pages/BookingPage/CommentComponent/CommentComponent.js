@@ -8,21 +8,7 @@ import Text from "~/components/Text/Text";
 CommentComponent.propTypes = {};
 
 function CommentComponent({ request, setRequest }) {
-  return (
-    <div className={clsx(styles.wrapper)}>
-      <label>
-        <Text>Special Requests (optional)</Text>
-      </label>
-      <textarea
-        type="text"
-        placeholder="Enter comment..."
-        value={request}
-        onChange={(e) => {
-          setRequest(e.target.value);
-        }}
-      />
-    </div>
-  );
+  return <div></div>;
 }
 
 export default CommentComponent;

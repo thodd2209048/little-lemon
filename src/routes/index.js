@@ -1,4 +1,5 @@
 import BookingPage from "~/pages/BookingPage/BookingPage";
+import BookingPageDisplay2 from "~/pages/BookingPage/BookingPageDisplay2/BookingPageDisplay2";
 import HomePage from "~/pages/HomePage/HomePage";
 import MenuPage from "~/pages/MenuPage/MenuPage";
 

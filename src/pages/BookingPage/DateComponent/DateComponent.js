@@ -8,7 +8,6 @@ import styles from "./DateComponent.module.scss";
 DateComponent.propTypes = {};
 
 function DateComponent({ date, setDate }) {
-  console.log(date);
   return (
     <div className={clsx(styles.wrapper)}>
       <Text cardTitle className={clsx(styles.title)}>

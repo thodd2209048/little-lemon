@@ -1,5 +1,5 @@
 .wrapper {
-  --tableSize: max(15vw, 80px);
+  --tableSize: max(10vw, 70px);
 
   display: flex;
   flex-direction: column;
@@ -9,7 +9,6 @@
 
 .title {
   text-align: center;
-  margin-bottom: 10px;
   font-size: 2rem;
 }
 
@@ -47,10 +46,10 @@
   & img:hover {
     cursor: pointer;
   }
-}
 
-p {
-  cursor: pointer;
+  & p {
+    cursor: pointer;
+  }
 }
 
 .tableName {
@@ -85,6 +84,6 @@ p {
 
 @media screen and (min-width: 992px) {
   .wrapper {
-    --tableSize: max(4vw, 80px);
+    --tableSize: max(4vw, 70px);
   }
 }
